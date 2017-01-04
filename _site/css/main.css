@@ -218,26 +218,18 @@ span {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width : 480px) {
+    .banner-text h3 {
+	font-size: 30px;
+    }
 
-.carousel-caption p.hidden-xs {
-    margin-top: 5%;
-    text-align: left;
-    padding-left: -30%;
-    font-size: 65px;
-}
+    span {
+	width: 50px;
+    }
 
-.carousel-caption p.visible-sm {
-    margin-top: 15%;
-    text-align: left;
-    padding-left: 10%;
-    font-size: 40px;
-}
-
-.carousel-caption p.visible-xs {
-    margin-top: 30%;
-    text-align: left;
-    padding-left: 10%;
-    font-size: 30px;
+    .frase > div > p {
+	font-size: 25px;
+    }
 }
 
 .slide-1 {
@@ -298,6 +290,7 @@ span {
     background-size: cover;
     height: 100%;
     color: #ffffff;
+
 }
 
 .slide-7 {
@@ -308,6 +301,72 @@ span {
     background-size: cover;
     height: 100%;
     color: #ffffff;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .slide-3 {
+	background: url("../imgs/foto-3_xs.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	color: #ffffff;
+    }
+
+    .slide-4 {
+	background: url("../imgs/foto-4_xs.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	color: #ffffff;
+    }
+    
+    .slide-5 {
+	background: url("../imgs/foto-5_xs.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	color: #ffffff;
+    }
+
+    .slide-7 {
+	background: url("../imgs/foto-7_xs.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	color: #ffffff;
+    }
+}
+
+/* Tablets */ 
+@media only screen and (max-width : 768px) {    
+    .slide-5 {
+	background: url("../imgs/foto-5_sm.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	color: #ffffff;
+    }
+
+    .slide-7 {
+	background: url("../imgs/foto-7_sm.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	color: #ffffff;
+    }
 }
 
 /****************************************
@@ -334,6 +393,12 @@ span {
     font-family: Satisfy;
     font-weight: 400;
     font-style: normal;
+}
+
+@media only screen and (max-width : 480px) {
+    .frase > div > p {
+	font-size: 25px;
+    }
 }
 
 /****************************************
@@ -376,7 +441,7 @@ article .container h2 {
     font-size: 1.3em;
 }
 
-#electro {
+.regalo_style {
     background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -385,32 +450,6 @@ article .container h2 {
     color: #ffffff;
 }
 
-#bazar {
-    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #ffffff;
-}
-
-#blanco {
-    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #ffffff;
-}
-
-#mueble {
-    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #ffffff;
-}
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
@@ -420,6 +459,26 @@ article .container h2 {
 
     article .container h2 {
 	font-size: 1.5em;
+    }
+
+    .regalo_style {
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7_xs.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    }
+}
+
+@media only screen and (max-width : 768px) {    
+    .regalo_style {
+	background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7_sm.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #ffffff;
     }
 }
 
