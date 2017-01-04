@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#myNavbar" data-offset="100">
+    <header class="header-hidden">
+      <h1>Casamiento Mary y Ema</h1>
+    </header>
+
+    {% include nav-bar.html %}
+    
+    {{ content }}
+
+    {% if site.debug %}
+    {% include toc.html %}
+    {% endif %}
+    {% include footer.html %}
+    {% include js_scripts.html %}
+
+  </body>
+</html>

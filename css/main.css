@@ -1,0 +1,459 @@
+/* Personal CSS */
+
+/* Authors: @fnbellomo
+ */
+
+/****************************************
+ * Base structure
+ ****************************************/
+body {
+    font-family: Helvetica, Arial;
+    position: relative;
+}
+
+.site-name {
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.50;
+    color: #333333;
+    text-align: center;
+}
+
+ol, ul {
+    list-style: outside none none;
+}
+
+.list-icons {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.list-icons li {
+    padding: 0 0 15px 0;
+}
+
+blockquote {
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.title {
+    margin-top: 0;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+span {
+    border: 0;
+    border-top: 1px solid #fff;
+    display: inline-block;
+    margin: 6px 10px;
+    width: 150px;
+}
+
+.header-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
+/****************************************
+ * NavBar
+ ****************************************/
+.navbar-inverse {
+    background-color: rgba(88,88,88,0.2);
+    border-color: rgba(88,88,88,0.2);
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-brand > img {
+    display: block;
+    max-width:250px;
+    margin-top: -10px;
+}
+
+.navbar-brand > img.visible-xs{
+    display: block;
+    max-width:200px;
+    margin-top: -10px;
+    
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
+.navbar-custom {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+    font-weight: bold;
+}
+
+/****************************************
+ * Buttons
+ ****************************************/
+.btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 0;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-default {
+    color: #55acee;
+    border: 1px solid #cccccc;
+}
+
+.btn-default:hover {
+    color: #ffffff;
+    background-color: #339BEB;
+    border-color: #339BEB;
+}
+
+.btn-online {
+    font-size: 20px;
+}
+
+.btn-success {
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10%;
+    white-space:normal !important;
+    max-width:100px;
+    box-shadow: 3px 3px 5px #000;
+}
+/****************************************
+ * Box
+ ***************************************/
+.box-def {
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 3px 4px 15px -6px #000;
+    padding: 20px 25px;
+    position: relative;
+}
+
+.box-def h1 {
+    color: #292636;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.3em;
+    margin: 0px 0px 20px;
+    border-bottom: 1px solid #D4DFF6;
+    padding: 0px 15px 18px;
+}
+
+.box-def p {
+    color: #87818C;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+    padding: 0px 15px;
+    text-align: justify;
+}
+
+/****************************************
+ * Carousel
+ ***************************************/
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner .item {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-text h3 {
+    font-family: Engagement;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 99px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.carousel-caption p.hidden-xs {
+    margin-top: 5%;
+    text-align: left;
+    padding-left: -30%;
+    font-size: 65px;
+}
+
+.carousel-caption p.visible-sm {
+    margin-top: 15%;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 40px;
+}
+
+.carousel-caption p.visible-xs {
+    margin-top: 30%;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 30px;
+}
+
+.slide-1 {
+    background: url("../imgs/foto-1.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slide-2 {
+    background: url("../imgs/foto-2.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slide-3 {
+    background: url("../imgs/foto-3.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slide-4 {
+    background: url("../imgs/foto-4.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slide-5 {
+    background: url("../imgs/foto-5.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slide-6 {
+    background: url("../imgs/foto-6.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slide-7 {
+    background: url("../imgs/foto-7.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: #ffffff;
+}
+
+/****************************************
+ * Frase
+ ***************************************/
+.frase {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.frase-1 {
+    background: url("../imgs/camino.jpg");
+}
+
+.frase-2 {
+    background: url("../imgs/rosas.jpeg");
+}
+
+.frase > div > p {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    text-align: center;
+    font-family: Satisfy;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/****************************************
+ * Historia
+ ***************************************/
+#historia {
+    background-color : rgb(245, 244, 236);
+    padding-bottom: 50px;
+}
+
+
+/****************************************
+ * Map
+ ***************************************/
+#map {
+     height: 100%;
+}
+
+
+/****************************************
+ * Regalos
+ ***************************************/
+#regalos {
+
+}
+
+article .container h2 {
+    padding-bottom: 15px;
+    padding-top: 50px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    text-align: left;
+    font-size: 3em;
+}
+
+.lista {
+    text-align: left;
+}
+
+.lista-ul {
+    font-size: 1.3em;
+}
+
+#electro {
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#bazar {
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#blanco {
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#mueble {
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../imgs/foto-7.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .regalo_style {
+	height: 1000px;
+    }
+
+    article .container h2 {
+	font-size: 1.5em;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .regalo_style {
+	height: 100%;
+    }
+}
+/****************************************
+ * Comentarios
+ ***************************************/
+#comentarios {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/****************************************
+ * Footer
+ ***************************************/
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-texto {
+    text-align: center;
+}
+
+.footer-texto > p {
+    margin-bottom: 0px;
+}
+
+.footer-texto > p > strong {
+    color: #e62b1e;
+}

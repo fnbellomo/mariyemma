@@ -1,0 +1,202 @@
+---
+title: Casamiento Mary y Ema
+layout: default
+
+imgs:
+  - "slide-5"
+  - "slide-3"
+  - "slide-4"
+  - "slide-7"
+
+electros: [Cocina, Lavarropas, Secarropas, Procesadora, Batidora, Cafetera, Plancha, Pava, Ventilador, Estufa eléctrica, Veladores, Microondas, Tv]
+
+basares: [Cubiertos, Ollas de aluminio, Hervidor de aluminio, Colador de aluminio, Fuentes tipo pyrex, Fuentes de aluminio, Fuentes, Escurridor de vajilla, Parrilla, Palita y atizador para asar, Bifera, Tablas de madera]
+
+blancos: [Mantel, Servilletas, Repasador, Cortina para baño, Cortinas para cocina, Cortinas para dormitorios, Juegos de sábanas, Acolchado, Cubrecama, Toallas, Toallones]
+
+muebles: [Cama/sommiers, Mesitas de luz, Chifonieres, Cómoda, Mesa, Sillas, Alacena vertical, Escritorio, Espejo]
+---
+
+{% include cover_carousel.html %}
+
+
+<!-- Frase 1 -->
+<!-- ======= -->
+<section class="frase frase-1 first-element">
+  <div class="container">
+    <p>"Sea benditu tu manantial, y alégrate con la mujer de tu juventud, como cierva amada y graciosa gacela. Sus caricias te satisfagan en todo tiempo, y en su amor recréate siempre." Proverbios 5:18-19</p>
+  </div><!--/container -->
+</section>
+
+
+{% include map.html %}
+
+
+<!-- Frase 2-->
+<!-- ======= -->
+<section class="frase frase-2">
+  <div class="container">
+    <p>"Mi amado es mío, y yo suya. Él apacienta entre lirios." Caantares 2:16</p>
+  </div><!--/container -->
+</section>
+
+
+<!-- Lista de regalos -->
+<!-- ================ -->
+<section id="regalos">
+
+  <article id="electro" class="regalo_style">
+    <div class="container">
+      <h2>Electrodomésticos</h2>
+    
+      <div class="row lista">
+	
+	<div class="col-sm-offset-2 col-sm-4">
+	  <ul class="lista-ul">
+	  {% for electro in page.electros limit:6 offset:0 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ electro }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+	
+	<div class="col-sm-4">
+	  <ul class="lista-ul">
+	  {% for electro in page.electros limit:7 offset:6 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ electro }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+      
+      </div><!--/row -->
+    </div><!--/container -->
+  </article>
+
+  <article id="bazar" class="regalo_style">
+    <div class="container">
+      <h2>Bazar</h2>
+    
+      <div class="row lista">
+	
+	<div class="col-sm-offset-2 col-sm-4">
+	  <ul class="lista-ul">
+	  {% for element in page.basares limit:6 offset:0 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ element }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+	
+	<div class="col-sm-4">
+	  <ul class="lista-ul">
+	  {% for element in page.basares limit:7 offset:6 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ element }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+      
+      </div><!--/row -->
+    </div><!--/container -->
+  </article>
+
+  <article id="blanco" class="regalo_style">
+    <div class="container">
+      <h2>Blanco</h2>
+    
+      <div class="row lista">
+	
+	<div class="col-sm-offset-2 col-sm-4">
+	  <ul class="lista-ul">
+	  {% for element in page.blancos limit:6 offset:0 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ element }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+	
+	<div class="col-sm-4">
+	  <ul class="lista-ul">
+	  {% for element in page.blancos limit:7 offset:6 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ element }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+      
+      </div><!--/row -->
+    </div><!--/container -->
+  </article>
+
+  <article id="mueble" class="regalo_style">
+    <div class="container">
+      <h2>Muebles</h2>
+    
+      <div class="row lista">
+	
+	<div class="col-sm-offset-2 col-sm-4">
+	  <ul class="lista-ul">
+	  {% for element in page.muebles limit:6 offset:0 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ element }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+	
+	<div class="col-sm-4">
+	  <ul class="lista-ul">
+	  {% for element in page.muebles limit:7 offset:6 %}
+	  <li> <i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ element }}</li></br>
+	  {% endfor %}
+	  </ul>
+	</div><!--/col-sm -->
+      
+      </div><!--/row -->
+    </div><!--/container -->
+  </article>
+
+</section>
+
+
+<!-- Frase 3-->
+<!-- ======= -->
+<section class="frase frase-2">
+  <div class="container">
+    <p>"Por tanto, dejará el hombre a su padre y a su madre, y se unirá a su mujer, y serán una sola carne." Genesis 2:24</p>
+  </div><!--/container -->
+</section>
+
+
+<!-- Comentarios -->
+<!-- =========== -->
+<section id="comentarios">
+  <div class="container">
+    <div class="row">
+      <h2>Dejanos tu comentario</h2>
+      <div id="disqus_thread"></div>
+    </div><!--/row -->
+  </div><!--/container -->
+</section>
+
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//mariyemma-tk.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//mariyemma-tk.disqus.com/count.js" async></script>
